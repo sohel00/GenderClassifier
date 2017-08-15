@@ -6,8 +6,10 @@ Y = ['male','female','female','female','male','male','male','female','male','fem
 
 classify = tree.DecisionTreeClassifier()
 
+# fitting the data in classify
 classify = classify.fit(X,Y)
 
+# saving the output in prediction
 prediction = classify.predict([[140,75,45]])
 
 print prediction
